@@ -12,4 +12,3 @@ int main() {
   printf("result of -16 >> 3 : %d\n", result_3); //-2
   return 0;
 }
-
