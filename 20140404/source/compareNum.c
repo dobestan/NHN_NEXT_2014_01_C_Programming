@@ -10,4 +10,7 @@ int main() {
 
 int CompareTwoInteger(int num1 , int num2) {
   return ( num1 >= num2 ) ? num1 : num2;
+
+  // 이 부분은 확실히 이해해보세요.
+  // ( 조건 ) ? ( true ) : ( false )
 }
