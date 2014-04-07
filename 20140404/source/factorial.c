@@ -16,3 +16,16 @@ int factorial(int num) {
   if ( num == 1) return 1;
   return num * factorial( num - 1 );
 }
+
+/* ---출력 결과---
+ * factorial(1) = 1
+ * factorial(2) = 2
+ * factorial(3) = 6
+ * factorial(4) = 24
+ * factorial(5) = 120
+ * factorial(6) = 720
+ * factorial(7) = 5040
+ * factorial(8) = 40320
+ * factorial(9) = 362880
+ * factorial(10) = 3628800
+ * */
