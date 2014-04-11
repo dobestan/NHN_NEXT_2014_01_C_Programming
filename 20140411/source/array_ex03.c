@@ -60,3 +60,25 @@ int get_sum(int * foo, int size) {
   for ( int i = 0 ; i < size ; i++ ) { sum += foo[i]; }
   return sum;
 }
+
+/* --- 출력결과 ---
+ * foo[0] = 17
+ * foo[1] = 23
+ * foo[2] = 7
+ * foo[3] = 19
+ * foo[4] = 4
+ *
+ *
+ * 입력받은 배열은 다음과 같습니다.
+ * foo[0] = 17
+ * foo[1] = 23
+ * foo[2] = 7
+ * foo[3] = 19
+ * foo[4] = 4
+ *
+ *
+ * 연산 결과는 다음과 같습니다.
+ * MAX = 23
+ * MIN = 4
+ * SUM = 70
+ */
