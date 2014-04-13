@@ -1,0 +1,3 @@
+gcc hw07.c -o hw07.out
+./hw07.out
+rm hw07.out
