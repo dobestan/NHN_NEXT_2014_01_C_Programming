@@ -19,6 +19,9 @@ void set_array_by_rule_1_test(int (*result)[SIZE]) {
 
 
 void set_array_by_rule_2_test(int (*result)[SIZE]) {
+
+  // 45도 방향의 규칙성 출력하기
+
   int expected[SIZE][SIZE] = {
     {  1,  3,  6, 10, 15 },
     {  2,  5,  9, 14, 19 },
@@ -32,12 +35,15 @@ void set_array_by_rule_2_test(int (*result)[SIZE]) {
 
 
 void set_array_by_rule_3_test(int (*result)[SIZE]) {
+
+  // 달팽이 형태의 규칙성 출력하기
+
   int expected[SIZE][SIZE] = {
-    {  1,  3,  6, 10, 15 },
-    {  2,  5,  9, 14, 19 },
-    {  4,  8, 13, 18, 22 },
-    {  7, 12, 17, 21, 24 },
-    { 11, 16, 20, 23, 25 },
+    {  1,  2,  3,  4,  5 },
+    { 16, 17, 18, 19,  6 },
+    { 15, 24, 25, 20,  7 },
+    { 14, 23, 22, 21,  8 },
+    { 13, 12, 11, 10,  9 },
   };
 
   print_compare_result(result, expected);
@@ -49,7 +55,7 @@ void print_compare_result(int (*result)[SIZE], int (*expected)[SIZE]) {
   for ( int i = 0 ; i < SIZE ; i++ ) {
     for ( int j = 0 ; j < SIZE ; j++ ) {
       if ( result[i][j] == expected[i][j] ) pass++;
-      printf("%s", ( result[i][j] == expected[i][j]) ? "O" : "X" );
+      printf("%s", ( result[i][j] == expected[i][j]) ? "O " : "X " );
     }
     printf("\n");
   }
