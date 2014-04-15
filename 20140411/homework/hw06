@@ -1,0 +1,3 @@
+gcc hw06.c -o hw06.out
+./hw06.out
+rm hw06.out
