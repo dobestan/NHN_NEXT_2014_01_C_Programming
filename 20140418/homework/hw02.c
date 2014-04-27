@@ -13,6 +13,11 @@
  * @todo
  * - 항상 테스트를 먼저 작성하라.
  * - 테스트를 할 때는 비용을 생각하라.
+ *
+ * - 주석은 얼마나 상세해야하나?
+ * - 지금 내 상황에서 문서화가 필요한가?
+ *
+ * - 각목이 내게 던진 질문을 떠올려보자. "너가 문서화가 필요한 이유가 뭔데?"
  */
 
 #include <stdio.h>
@@ -61,9 +66,14 @@ void square_by_value_test(double num, double expected) {
  * @brief unit test
  */
 void square_by_reference_test(double num, double expected) {
-  double original = num;
+  /**
+   * square_by_reference 함수 같은 경우에는 실제로 값을 바꾼다.
+   * 따라서 바뀌기 전의 원본값(double origin)을 저장해두고 시작하자.
+   */
+
+  double original = num; // original value
   square_by_reference(&num);
-  double result = num;
+  double result = num; // new value
 
   printf("[%s] square_by_reference(%lf) should change num to %lf\n",
       ( result == expected ) ? "SUCCESS" : "FAILED", original, expected);

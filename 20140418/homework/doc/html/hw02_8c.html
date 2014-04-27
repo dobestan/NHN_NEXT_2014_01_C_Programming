@@ -101,9 +101,8 @@ Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw02_8c.html#a36b6b36de8d8b1f3feadf8e75e10040e">square_by_value_test</a> (double, double)</td></tr>
 <tr class="memdesc:a36b6b36de8d8b1f3feadf8e75e10040e"><td class="mdescLeft">&#160;</td><td class="mdescRight">unit test <br/></td></tr>
 <tr class="separator:a36b6b36de8d8b1f3feadf8e75e10040e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d3e6033b7527602dd4508494b54865e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d3e6033b7527602dd4508494b54865e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw02_8c.html#a5d3e6033b7527602dd4508494b54865e">square_by_reference_test</a> (double, double)</td></tr>
-<tr class="memdesc:a5d3e6033b7527602dd4508494b54865e"><td class="mdescLeft">&#160;</td><td class="mdescRight">unit test <br/></td></tr>
+<tr class="memitem:a5d3e6033b7527602dd4508494b54865e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw02_8c.html#a5d3e6033b7527602dd4508494b54865e">square_by_reference_test</a> (double, double)</td></tr>
+<tr class="memdesc:a5d3e6033b7527602dd4508494b54865e"><td class="mdescLeft">&#160;</td><td class="mdescRight">unit test  <a href="#a5d3e6033b7527602dd4508494b54865e">More...</a><br/></td></tr>
 <tr class="separator:a5d3e6033b7527602dd4508494b54865e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee2364a550e2185a2325f87e3648bd83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee2364a550e2185a2325f87e3648bd83"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw02_8c.html#aee2364a550e2185a2325f87e3648bd83">square_tests</a> (void)</td></tr>
@@ -123,9 +122,14 @@ Call-by-reference기반의 SquareByReferce<br/>
 SquareByValue 함수는 인자로 젂달된 값의 제곱을 반홖해야 하면, SquareByReference 함수는 정수가 저장되어 있는 변수의 주소값을 인자로 받아서 해당 변수에 저장된 값의 제곱을 그 변수에 다시 저장한다.</p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd><ul>
 <li>항상 테스트를 먼저 작성하라.</li>
-<li>테스트를 할 때는 비용을 생각하라. </li>
+<li>테스트를 할 때는 비용을 생각하라.</li>
 </ul>
 </dd></dl>
+<ul>
+<li>주석은 얼마나 상세해야하나?</li>
+<li>지금 내 상황에서 문서화가 필요한가?</li>
+<li>각목이 내게 던진 질문을 떠올려보자. "너가 문서화가 필요한 이유가 뭔데?" </li>
+</ul>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a6efaeaaa87cc51a879e1292ea089951e"></a>
 <div class="memitem">
@@ -141,6 +145,35 @@ SquareByValue 함수는 인자로 젂달된 값의 제곱을 반홖해야 하면
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>포인터(Reference)를 통하여 직접 값을 수정하므로 리턴할 필요가 없다. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5d3e6033b7527602dd4508494b54865e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void square_by_reference_test </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>expected</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>unit test </p>
+<p>square_by_reference 함수 같은 경우에는 실제로 값을 바꾼다. 따라서 바뀌기 전의 원본값(double origin)을 저장해두고 시작하자.</p>
 
 </div>
 </div>
@@ -164,7 +197,7 @@ SquareByValue 함수는 인자로 젂달된 값의 제곱을 반홖해야 하면
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 27 2014 21:21:21 for 20140418 Homework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 27 2014 21:27:26 for 20140418 Homework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
