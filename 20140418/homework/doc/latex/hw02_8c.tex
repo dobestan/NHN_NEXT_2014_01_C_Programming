@@ -1,0 +1,67 @@
+\hypertarget{hw02_8c}{\section{hw02.\-c File Reference}
+\label{hw02_8c}\index{hw02.\-c@{hw02.\-c}}
+}
+
+
+Call by Value / Call by Reference Example.  
+
+
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{hw02_8c_a2774ff9e98eb8842168dcffc486823f8}{square\-\_\-by\-\_\-value} (double)
+\item 
+void \hyperlink{hw02_8c_a6efaeaaa87cc51a879e1292ea089951e}{square\-\_\-by\-\_\-reference} (double $\ast$)
+\item 
+\hypertarget{hw02_8c_a36b6b36de8d8b1f3feadf8e75e10040e}{void \hyperlink{hw02_8c_a36b6b36de8d8b1f3feadf8e75e10040e}{square\-\_\-by\-\_\-value\-\_\-test} (double, double)}\label{hw02_8c_a36b6b36de8d8b1f3feadf8e75e10040e}
+
+\begin{DoxyCompactList}\small\item\em unit test \end{DoxyCompactList}\item 
+\hypertarget{hw02_8c_a5d3e6033b7527602dd4508494b54865e}{void \hyperlink{hw02_8c_a5d3e6033b7527602dd4508494b54865e}{square\-\_\-by\-\_\-reference\-\_\-test} (double, double)}\label{hw02_8c_a5d3e6033b7527602dd4508494b54865e}
+
+\begin{DoxyCompactList}\small\item\em unit test \end{DoxyCompactList}\item 
+\hypertarget{hw02_8c_aee2364a550e2185a2325f87e3648bd83}{void \hyperlink{hw02_8c_aee2364a550e2185a2325f87e3648bd83}{square\-\_\-tests} (void)}\label{hw02_8c_aee2364a550e2185a2325f87e3648bd83}
+
+\begin{DoxyCompactList}\small\item\em integration test \end{DoxyCompactList}\item 
+\hypertarget{hw02_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{int {\bfseries main} ()}\label{hw02_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Call by Value / Call by Reference Example. 변수 num에 저장된 값의 제곱을 계산하는 함수를 정의하고, 이를 호출하는 main함수를 작성해보자. 단, 여기서는 다음 두 가지 형태로 함수를 정의해야 한다. \par
+\par
+call-\/by-\/value기반의 Square\-By\-Value\par
+Call-\/by-\/reference기반의 Square\-By\-Referce\par
+\par
+Square\-By\-Value 함수는 인자로 젂달된 값의 제곱을 반홖해야 하면, Square\-By\-Reference 함수는 정수가 저장되어 있는 변수의 주소값을 인자로 받아서 해당 변수에 저장된 값의 제곱을 그 변수에 다시 저장한다.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]
+\begin{DoxyItemize}
+\item 항상 테스트를 먼저 작성하라.
+\item 테스트를 할 때는 비용을 생각하라. 
+\end{DoxyItemize}\end{DoxyRefDesc}
+
+
+\subsection{Function Documentation}
+\hypertarget{hw02_8c_a6efaeaaa87cc51a879e1292ea089951e}{\index{hw02.\-c@{hw02.\-c}!square\-\_\-by\-\_\-reference@{square\-\_\-by\-\_\-reference}}
+\index{square\-\_\-by\-\_\-reference@{square\-\_\-by\-\_\-reference}!hw02.c@{hw02.\-c}}
+\subsubsection[{square\-\_\-by\-\_\-reference}]{\setlength{\rightskip}{0pt plus 5cm}void square\-\_\-by\-\_\-reference (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{num}
+\end{DoxyParamCaption}
+)}}\label{hw02_8c_a6efaeaaa87cc51a879e1292ea089951e}
+\begin{DoxyReturn}{Returns}
+포인터(\-Reference)를 통하여 직접 값을 수정하므로 리턴할 필요가 없다. 
+\end{DoxyReturn}
+\hypertarget{hw02_8c_a2774ff9e98eb8842168dcffc486823f8}{\index{hw02.\-c@{hw02.\-c}!square\-\_\-by\-\_\-value@{square\-\_\-by\-\_\-value}}
+\index{square\-\_\-by\-\_\-value@{square\-\_\-by\-\_\-value}!hw02.c@{hw02.\-c}}
+\subsubsection[{square\-\_\-by\-\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}double square\-\_\-by\-\_\-value (
+\begin{DoxyParamCaption}
+\item[{double}]{num}
+\end{DoxyParamCaption}
+)}}\label{hw02_8c_a2774ff9e98eb8842168dcffc486823f8}
+\begin{DoxyReturn}{Returns}
+포인터로 직접 값을 수정할 수 없으므로, Square값을 반환해야한다. 
+\end{DoxyReturn}
