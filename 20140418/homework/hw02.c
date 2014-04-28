@@ -94,3 +94,14 @@ void square_tests(void) {
   square_by_reference_test(-7, 49);
   square_by_reference_test(2.5, 6.25);
 }
+
+/* --- result ---o
+ * [SUCCESS] square_by_value(4.000000) should return 16.000000
+ * [SUCCESS] square_by_value(5.000000) should return 25.000000
+ * [SUCCESS] square_by_value(-7.000000) should return 49.000000
+ * [SUCCESS] square_by_value(2.500000) should return 6.250000
+ * [SUCCESS] square_by_reference(4.000000) should change num to 16.000000
+ * [SUCCESS] square_by_reference(5.000000) should change num to 25.000000
+ * [SUCCESS] square_by_reference(-7.000000) should change num to 49.000000
+ * [SUCCESS] square_by_reference(2.500000) should change num to 6.250000
+ */
