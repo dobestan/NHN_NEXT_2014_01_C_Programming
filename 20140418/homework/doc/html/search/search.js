@@ -7,9 +7,9 @@
 
 var indexSectionsWithContent =
 {
-  0: "hnpst",
+  0: "ghmnpst",
   1: "h",
-  2: "ps",
+  2: "gmps",
   3: "nt"
 };
 

@@ -1,0 +1,58 @@
+\hypertarget{hw07_8c}{\section{hw07.\-c File Reference}
+\label{hw07_8c}\index{hw07.\-c@{hw07.\-c}}
+}
+
+
+십진수 -\/$>$ 이진수  
+
+
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{hw07_8c_a409475417e18a6390ffb3039097338dc}{int {\bfseries get\-\_\-user\-\_\-input} (void)}\label{hw07_8c_a409475417e18a6390ffb3039097338dc}
+
+\item 
+\hypertarget{hw07_8c_a776d4b8bf7a437d0bd71afaa6aa36bc3}{int $\ast$ {\bfseries convert\-\_\-10\-\_\-to\-\_\-2} (int input)}\label{hw07_8c_a776d4b8bf7a437d0bd71afaa6aa36bc3}
+
+\item 
+\hypertarget{hw07_8c_a8e6fe473924f400ceac4800bde09294d}{void {\bfseries convert\-\_\-10\-\_\-to\-\_\-2\-\_\-test} (int input, int $\ast$expected)}\label{hw07_8c_a8e6fe473924f400ceac4800bde09294d}
+
+\item 
+\hypertarget{hw07_8c_a2ced803a864b89bad3dec258b44c4374}{void {\bfseries convert\-\_\-10\-\_\-to\-\_\-2\-\_\-tests} (void)}\label{hw07_8c_a2ced803a864b89bad3dec258b44c4374}
+
+\item 
+\hypertarget{hw07_8c_a93c1154a540cb7e951b82b58fb6d2bb0}{void {\bfseries print\-\_\-result} (int input, int $\ast$binary)}\label{hw07_8c_a93c1154a540cb7e951b82b58fb6d2bb0}
+
+\item 
+int \hyperlink{hw07_8c_a960c6d80df16fd038d9764849c97c6be}{get\-\_\-digits\-\_\-needed} (int input)
+\item 
+\hypertarget{hw07_8c_ae794eb0179661bf10cdfb6fd6883089c}{void {\bfseries get\-\_\-digits\-\_\-needed\-\_\-test} (int input, int expected)}\label{hw07_8c_ae794eb0179661bf10cdfb6fd6883089c}
+
+\item 
+\hypertarget{hw07_8c_a115d237f43fd458f152c82e29e086a86}{void {\bfseries get\-\_\-digits\-\_\-needed\-\_\-tests} (void)}\label{hw07_8c_a115d237f43fd458f152c82e29e086a86}
+
+\item 
+\hypertarget{hw07_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{int {\bfseries main} ()}\label{hw07_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+십진수 -\/$>$ 이진수 
+
+\subsection{Function Documentation}
+\hypertarget{hw07_8c_a960c6d80df16fd038d9764849c97c6be}{\index{hw07.\-c@{hw07.\-c}!get\-\_\-digits\-\_\-needed@{get\-\_\-digits\-\_\-needed}}
+\index{get\-\_\-digits\-\_\-needed@{get\-\_\-digits\-\_\-needed}!hw07.c@{hw07.\-c}}
+\subsubsection[{get\-\_\-digits\-\_\-needed}]{\setlength{\rightskip}{0pt plus 5cm}int get\-\_\-digits\-\_\-needed (
+\begin{DoxyParamCaption}
+\item[{int}]{input}
+\end{DoxyParamCaption}
+)}}\label{hw07_8c_a960c6d80df16fd038d9764849c97c6be}
+
+\begin{DoxyItemize}
+\item 2진수를 표현하기 위해서 필요한 자리수를 리턴한다.
+\item 예를 들어서, 8(1000) = 4를 리턴한다.
+\item 예를 들어서, 18(10010) = 5를 리턴한다. 
+\end{DoxyItemize}

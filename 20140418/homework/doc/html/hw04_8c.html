@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>20140418 Homework: hw01.c File Reference</title>
+<title>20140418 Homework: hw04.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,92 +83,70 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">hw01.c File Reference</div>  </div>
+<div class="title">hw04.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>이차원 배열을 이용한 구구단 출력  
+<p>I am a student -&gt; I ma a tneduts.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;string.h&gt;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a41a3651fc76618ba74d6c81302d4203c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw01_8c.html#a41a3651fc76618ba74d6c81302d4203c">set_8x9_array</a> (int *arr, int n)</td></tr>
-<tr class="separator:a41a3651fc76618ba74d6c81302d4203c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68077fca928a946c39d891a14571d5d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw01_8c.html#a68077fca928a946c39d891a14571d5d2">print_8x9_array</a> (int *arr, int n)</td></tr>
-<tr class="separator:a68077fca928a946c39d891a14571d5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6b85be244a2a1cc1d4a2327b7345101"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw04_8c.html#ad6b85be244a2a1cc1d4a2327b7345101">make_words_inverse</a> (char *)</td></tr>
+<tr class="memdesc:ad6b85be244a2a1cc1d4a2327b7345101"><td class="mdescLeft">&#160;</td><td class="mdescRight">stdlib.h &gt; malloc 메모리 동적 할당을 위해서 헤더파일 추가  <a href="#ad6b85be244a2a1cc1d4a2327b7345101">More...</a><br/></td></tr>
+<tr class="separator:ad6b85be244a2a1cc1d4a2327b7345101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ed47a6e766312dc38e775eb5cb500cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ed47a6e766312dc38e775eb5cb500cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>make_words_inverse_test</b> (char *, char *)</td></tr>
+<tr class="separator:a8ed47a6e766312dc38e775eb5cb500cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d3fe216b03d4a890fdac6d10d00b8c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d3fe216b03d4a890fdac6d10d00b8c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>make_words_inverse_tests</b> (void)</td></tr>
+<tr class="separator:a8d3fe216b03d4a890fdac6d10d00b8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ce5904693c7f820db0c92288e72d0e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ce5904693c7f820db0c92288e72d0e6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>make_words_inverse_exec</b> (void)</td></tr>
+<tr class="separator:a1ce5904693c7f820db0c92288e72d0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>이차원 배열을 이용한 구구단 출력 </p>
-<p>int gugu[8][9]; <br/>
-다음 함수를 이용하여 구구단을 출력하세요. <br/>
+<div class="textblock"><p>I am a student -&gt; I ma a tneduts. </p>
+<p>하나의 문장을 입력 받아 각 단어마다 출력을 거꾸로 하세요<br/>
+입력 시 gets(char *s) 함수를 이용하세요<br/>
 <br/>
- void gugu_func2(int* arr, int n); <br/>
-void func2_print(int* arr, int n); <br/>
-</p>
+입력&gt; I am a student 출력&gt; I ma a tneduts</p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd><ul>
+<li>일단 함수를 만들고 테스트 코드를 만들자. </li>
+</ul>
+</dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a68077fca928a946c39d891a14571d5d2"></a>
+<a class="anchor" id="ad6b85be244a2a1cc1d4a2327b7345101"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void print_8x9_array </td>
+          <td class="memname">char * make_words_inverse </td>
           <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>arr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>foo</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<ul>
-<li>int arr[9] 포인터를 받고 특정 정수를 입력받는다.</li>
-<li>특정 구구단행을 출력한다. <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-</li>
-</ul>
 
-</div>
-</div>
-<a class="anchor" id="a41a3651fc76618ba74d6c81302d4203c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void set_8x9_array </td>
-          <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>arr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>stdlib.h &gt; malloc 메모리 동적 할당을 위해서 헤더파일 추가 </p>
+<p>테스트 코드를 위하여 string.h &gt; strcmp를 사용하기 위하여 추가 strlen 함수를 사용합니다.</p>
 <ul>
-<li>int arr[9] 포인터를 받고 특정 정수를 입력받는다.</li>
-<li>배열에다 특정 구구단 행을 넣는다. <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-</li>
+<li>char * string을 입력받는다.</li>
+<li>함수 내부에서는 메모리를 동적할당 받아 문자열을 거꾸로 저장한다.</li>
+<li>새로 생성된 문자열 포인터를 리턴한다. </li>
 </ul>
+<p>일단 핵심적인 아이디어는 Stack을 이용하는 것 그냥 배열을 Stack으로 이용하자.</p>
+<p>공백이 나올 때 까지 진행한다 공백이 나오면 지금까지 저장했던 문자열을 출력한다.</p>
+<p>마지막에 NULL을 넣기 위해서 strlen(src)보다는 하나 더 크게 만들어주자.</p>
+<p>for stack </p>
 
 </div>
 </div>

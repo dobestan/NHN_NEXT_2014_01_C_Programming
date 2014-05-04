@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>20140418 Homework: hw01.c File Reference</title>
+<title>20140418 Homework: hw03.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,48 +83,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">hw01.c File Reference</div>  </div>
+<div class="title">hw03.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>이차원 배열을 이용한 구구단 출력  
+<p>strcat(char * dest, char * src) implementation  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;string.h&gt;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a41a3651fc76618ba74d6c81302d4203c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw01_8c.html#a41a3651fc76618ba74d6c81302d4203c">set_8x9_array</a> (int *arr, int n)</td></tr>
-<tr class="separator:a41a3651fc76618ba74d6c81302d4203c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68077fca928a946c39d891a14571d5d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw01_8c.html#a68077fca928a946c39d891a14571d5d2">print_8x9_array</a> (int *arr, int n)</td></tr>
-<tr class="separator:a68077fca928a946c39d891a14571d5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9bf33a7d8d02ad7e3c623e91c47263e"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw03_8c.html#ad9bf33a7d8d02ad7e3c623e91c47263e">mystrcat</a> (char *s1, char *s2)</td></tr>
+<tr class="separator:ad9bf33a7d8d02ad7e3c623e91c47263e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad32e1244d5f0c5cbb8dc613512f26107"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw03_8c.html#ad32e1244d5f0c5cbb8dc613512f26107">mystrcat_test</a> (char *s1, char *s2, char *expected)</td></tr>
+<tr class="memdesc:ad32e1244d5f0c5cbb8dc613512f26107"><td class="mdescLeft">&#160;</td><td class="mdescRight">unit test  <a href="#ad32e1244d5f0c5cbb8dc613512f26107">More...</a><br/></td></tr>
+<tr class="separator:ad32e1244d5f0c5cbb8dc613512f26107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad642ba2ade6ea12804d02a5e249aa1f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad642ba2ade6ea12804d02a5e249aa1f8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mystrcat_tests</b> (void)</td></tr>
+<tr class="separator:ad642ba2ade6ea12804d02a5e249aa1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6101cfaa967e228216889bfb54104183"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw03_8c.html#a6101cfaa967e228216889bfb54104183">mystrcat_exec</a> (void)</td></tr>
+<tr class="separator:a6101cfaa967e228216889bfb54104183"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>이차원 배열을 이용한 구구단 출력 </p>
-<p>int gugu[8][9]; <br/>
-다음 함수를 이용하여 구구단을 출력하세요. <br/>
-<br/>
- void gugu_func2(int* arr, int n); <br/>
-void func2_print(int* arr, int n); <br/>
-</p>
+<div class="textblock"><p>strcat(char * dest, char * src) implementation </p>
+<p>두 개의 단어를 입력 받아 두 입력 받은 두 단어를 연결하는 함수를 구현한다. char *s mystrCat(char *s1, char *s2); 출력에 필요한 array는 char out[100];으로 사용한다. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a68077fca928a946c39d891a14571d5d2"></a>
+<a class="anchor" id="ad9bf33a7d8d02ad7e3c623e91c47263e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void print_8x9_array </td>
+          <td class="memname">char * mystrcat </td>
           <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>arr</em>, </td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -133,29 +135,53 @@ void func2_print(int* arr, int n); <br/>
         </tr>
       </table>
 </div><div class="memdoc">
-<ul>
-<li>int arr[9] 포인터를 받고 특정 정수를 입력받는다.</li>
-<li>특정 구구단행을 출력한다. <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-</li>
-</ul>
+<p>warning: address of stack memory associated with local variable 'out' returned [-Wreturn-stack-address] return out; ^~~ 1 warning generated.</p>
+<p>당연히 local Variable은 함수가 종료되면 사라지는데 어떻게 이 문제를 해결할 수 있을까? Memory Allocation을 사용할 수 있나?</p>
+<p>No! strcmp 사용법에 대해서 잘못 생각을 했다. 단순히 char *가 리턴되는 것이 아니라 실제로 char * dest의 값이 변경되는 것이다. 그러면 처음의 s1 string이 문자의 배열로 선언되어야 하겠다.</p>
 
 </div>
 </div>
-<a class="anchor" id="a41a3651fc76618ba74d6c81302d4203c"></a>
+<a class="anchor" id="a6101cfaa967e228216889bfb54104183"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void set_8x9_array </td>
+          <td class="memname">void mystrcat_exec </td>
           <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>arr</em>, </td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd><p class="startdd">&mdash;result&mdash; warning: this program uses gets(), which is unsafe. Enter first string : hello Enter second string : world </p>
+<h2>result is [hello world] </h2>
+<p class="enddd">gets()는 위험하다고 한다. fgets로 수정해보자. </p>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad32e1244d5f0c5cbb8dc613512f26107"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mystrcat_test </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em>&#160;</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>s2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>expected</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -164,11 +190,9 @@ void func2_print(int* arr, int n); <br/>
         </tr>
       </table>
 </div><div class="memdoc">
-<ul>
-<li>int arr[9] 포인터를 받고 특정 정수를 입력받는다.</li>
-<li>배열에다 특정 구구단 행을 넣는다. <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-</li>
-</ul>
+
+<p>unit test </p>
+<p>쉬운 비교를 위해서 string.h &gt; strcmp 를 사용하도록 한다. 만약 두 string이 같다면 strcmp는 0을 리턴한다. </p>
 
 </div>
 </div>

@@ -1,6 +1,6 @@
 /**
  * @file hw03.c
- * @brief
+ * @brief strcat(char * dest, char * src) implementation
  * @details
  * 두 개의 단어를 입력 받아 두 입력 받은 두 단어를 연결하는 함수를 구현한다.
  * char *s mystrCat(char *s1, char *s2);

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['hw01_2ec',['hw01.c',['../hw01_8c.html',1,'']]],
-  ['hw02_2ec',['hw02.c',['../hw02_8c.html',1,'']]]
+  ['get_5fdigits_5fneeded',['get_digits_needed',['../hw07_8c.html#a960c6d80df16fd038d9764849c97c6be',1,'hw07.c']]]
 ];

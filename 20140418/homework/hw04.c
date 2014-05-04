@@ -1,7 +1,7 @@
 /**
- * @file hw03.c
+ * @file hw04.c
  *
- * @brief
+ * @brief I am a student -> I ma a tneduts
  *
  * @details
  * 하나의 문장을 입력 받아 각 단어마다 출력을 거꾸로 하세요\n
