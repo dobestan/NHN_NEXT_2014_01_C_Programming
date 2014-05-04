@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>20140418 Homework: hw05.c File Reference</title>
+<title>20140418 Homework: hw11.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,91 +83,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">hw05.c File Reference</div>  </div>
+<div class="title">hw11.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Gray Code with Recursion.  
+<p>n명 죽이는데 살아남는 솔루션 구하기  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;stdlib.h&gt;</code><br/>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5bfb8d7ad54f8418a40ca7a650752906"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hw05_8c.html#a5bfb8d7ad54f8418a40ca7a650752906">print_gray_code</a> (int *gray_code, int start_bit, int end_bit, int bit)</td></tr>
-<tr class="separator:a5bfb8d7ad54f8418a40ca7a650752906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49395dd754d8472b4a6602372f96c34d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49395dd754d8472b4a6602372f96c34d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>where_to_survive</b> (int num)</td></tr>
+<tr class="separator:a49395dd754d8472b4a6602372f96c34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a418de43d248998dde4836a652d64b316"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a418de43d248998dde4836a652d64b316"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init_people</b> (int *people, int num)</td></tr>
+<tr class="separator:a418de43d248998dde4836a652d64b316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0132cfa4ff6abc703bc562c47050fbc5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0132cfa4ff6abc703bc562c47050fbc5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>next_person_to_kill</b> (int *people, int num, int where)</td></tr>
+<tr class="separator:a0132cfa4ff6abc703bc562c47050fbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7546ed63ceb3883bad68c845b479f21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7546ed63ceb3883bad68c845b479f21"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>next_person_index</b> (int num, int where)</td></tr>
+<tr class="separator:ad7546ed63ceb3883bad68c845b479f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c13fdf22c23fead98494901ecd09d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2c13fdf22c23fead98494901ecd09d3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>print_people</b> (int *people, int num)</td></tr>
+<tr class="separator:ae2c13fdf22c23fead98494901ecd09d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77e71d2134eeae6b58fbd14b8b2d8d85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77e71d2134eeae6b58fbd14b8b2d8d85"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>where_to_survive_test</b> (int num, int expected)</td></tr>
+<tr class="separator:a77e71d2134eeae6b58fbd14b8b2d8d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab01986a7def130ed1fc5de3b0839f517"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab01986a7def130ed1fc5de3b0839f517"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>where_to_survive_tests</b> (void)</td></tr>
+<tr class="separator:ab01986a7def130ed1fc5de3b0839f517"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Gray Code with Recursion. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a5bfb8d7ad54f8418a40ca7a650752906"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void print_gray_code </td>
-          <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>gray_code</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>start_bit</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>end_bit</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>bit</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>print_gray_code(int * gray_code, 0, BIT_SIZE, 0)으로 시작한다. bit refers to result of XOR(bit, gray_code[start_bit])</p>
-<p>시작하기에 앞서 십진수(이진수 -&gt; 그레이코드)로 표시하기로 한다.<br/>
-코드를 시작하기에 앞서 몇 가지 예시를 통해서 쉽게 구하는 방법을 살펴보자.</p>
-<h3>3(11 -&gt; 10)을 통해서 재귀적으로 7(111 -&gt; ?)을 구하는 과정</h3>
-<p>11 -&gt; 111, 즉 마지막 자리에 1이 생겼다.<br/>
-XOR(1 , 1) = 0 이므로 10에다가 0만 붙여주면 된다.<br/>
-7(111 -&gt; 100)</p>
-<h3>3(11 -&gt; 10)을 통해서 재귀적으로 6(110 -&gt; ?)을 구하는 과정</h3>
-<p>11 -&gt; 110, 즉 마지막 자리에 0이 생겼다.<br/>
-XOR(1, 0) = 1이므로 10에다가 1만 붙여주면 된다.<br/>
-6(110 -&gt; 101)</p>
-<p>start_bit == end_bit 인 경우, 우리가 원하는 graycode를 얻었으므로 출력하면 된다.</p>
-<p>start_bit != end_bit 인 경우, 계속 진행한다.</p>
-<p>bit는 이진수의 bit 값을 의미한다.<br/>
-출력 순서는 bit 값을 통해서 조정하자.<br/>
-<br/>
- 만약에 end_bit == 2 경우, bit 값에 따른 출력 순서는 다음과 같다.<br/>
-0 0 0<br/>
-0 0 1<br/>
-0 1 0<br/>
-0 1 1<br/>
-</p>
-<p>초기값 설정 0(0 -&gt; 0) XOR(0, 0) = 0</p>
-<p>초기값 설정 1(1 -&gt; 1) XOR(0, 1) = 1</p>
-<p>XOR(bit, next_bit) = gray_code[start_bit] 를 구할 수 있다.</p>
-<p>XOR(1, 0) = 1</p>
-<p>XOR(1, 1) = 0 </p>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p>n명 죽이는데 살아남는 솔루션 구하기 </p>
+<h3>아이디어</h3>
+<ul>
+<li>일단 Circular Queue를 이용해서 하면 직관적일 것 같은데 너무 귀찮다.</li>
+<li>그냥 적당한 사이즈 배열을 이용해서 구해보자. </li>
+</ul>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated on Sun May 4 2014 17:33:10 for 20140418 Homework by &#160;<a href="http://www.doxygen.org/index.html">

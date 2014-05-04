@@ -1,0 +1,47 @@
+\hypertarget{hw11_8c}{\section{hw11.\-c File Reference}
+\label{hw11_8c}\index{hw11.\-c@{hw11.\-c}}
+}
+
+
+n명 죽이는데 살아남는 솔루션 구하기  
+
+
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{hw11_8c_a49395dd754d8472b4a6602372f96c34d}{int {\bfseries where\-\_\-to\-\_\-survive} (int num)}\label{hw11_8c_a49395dd754d8472b4a6602372f96c34d}
+
+\item 
+\hypertarget{hw11_8c_a418de43d248998dde4836a652d64b316}{void {\bfseries init\-\_\-people} (int $\ast$people, int num)}\label{hw11_8c_a418de43d248998dde4836a652d64b316}
+
+\item 
+\hypertarget{hw11_8c_a0132cfa4ff6abc703bc562c47050fbc5}{int {\bfseries next\-\_\-person\-\_\-to\-\_\-kill} (int $\ast$people, int num, int where)}\label{hw11_8c_a0132cfa4ff6abc703bc562c47050fbc5}
+
+\item 
+\hypertarget{hw11_8c_ad7546ed63ceb3883bad68c845b479f21}{int {\bfseries next\-\_\-person\-\_\-index} (int num, int where)}\label{hw11_8c_ad7546ed63ceb3883bad68c845b479f21}
+
+\item 
+\hypertarget{hw11_8c_ae2c13fdf22c23fead98494901ecd09d3}{void {\bfseries print\-\_\-people} (int $\ast$people, int num)}\label{hw11_8c_ae2c13fdf22c23fead98494901ecd09d3}
+
+\item 
+\hypertarget{hw11_8c_a77e71d2134eeae6b58fbd14b8b2d8d85}{void {\bfseries where\-\_\-to\-\_\-survive\-\_\-test} (int num, int expected)}\label{hw11_8c_a77e71d2134eeae6b58fbd14b8b2d8d85}
+
+\item 
+\hypertarget{hw11_8c_ab01986a7def130ed1fc5de3b0839f517}{void {\bfseries where\-\_\-to\-\_\-survive\-\_\-tests} (void)}\label{hw11_8c_ab01986a7def130ed1fc5de3b0839f517}
+
+\item 
+\hypertarget{hw11_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{int {\bfseries main} ()}\label{hw11_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+n명 죽이는데 살아남는 솔루션 구하기 \paragraph*{아이디어}
+
+
+\begin{DoxyItemize}
+\item 일단 Circular Queue를 이용해서 하면 직관적일 것 같은데 너무 귀찮다.
+\item 그냥 적당한 사이즈 배열을 이용해서 구해보자. 
+\end{DoxyItemize}
